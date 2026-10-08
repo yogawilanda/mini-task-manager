@@ -1,0 +1,257 @@
+/*
+ * -------------- Yoga Wilanda Documentation V.1.0.0 -----------------
+ *
+ * <meta_config>
+ * Author_______________: yogawilanda <eayogawilanda@gmail.com>
+ * Path_________________: frontend/src/App.css
+ * Purpose______________: Style the task manager application layout.
+ * Version______________: 1.0.0
+ * Status_______________: active
+ * </meta_config>
+ *
+ * Function              : Application Styling
+ * Loc                   : App.css
+ *
+ * -------------------------------------------------------------------
+ */
+
+#root {
+  width: 100%;
+}
+
+.app {
+  width: min(900px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 48px 0;
+}
+
+.app-header {
+  margin-bottom: 32px;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.app-header p {
+  margin: 8px 0 0;
+  color: #64748b;
+}
+
+.task-form-section,
+.tasks-section,
+.audit-section {
+  margin-bottom: 24px;
+  padding: 24px;
+  border: 1px solid #e2e8f0;
+  border-radius: 2px;
+  background: #ffffff;
+}
+
+.tasks-section h2,
+.audit-section h2 {
+  margin-top: 0;
+}
+
+.task-list {
+  display: grid;
+  gap: 16px;
+}
+
+.error-message {
+  margin-bottom: 24px;
+  padding: 12px 16px;
+  border: 1px solid #fecaca;
+  border-radius: 2px;
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+.empty-state {
+  color: #64748b;
+}
+
+.audit-list {
+  display: grid;
+  gap: 12px;
+}
+
+.audit-item {
+  padding: 16px;
+  border-left: 3px solid #94a3b8;
+  background: #f8fafc;
+}
+
+.audit-item p {
+  margin: 4px 0;
+}
+
+.task-form {
+  display: grid;
+  gap: 16px;
+}
+
+.form-field {
+  display: grid;
+  gap: 6px;
+}
+
+.form-field label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 2px;
+  background: #ffffff;
+  color: #0f172a;
+}
+
+.form-field textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  outline: 2px solid #94a3b8;
+  outline-offset: 1px;
+}
+
+.primary-button {
+  width: fit-content;
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 2px;
+  background: #0f172a;
+  color: #ffffff;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 20px;
+  border: 1px solid #e2e8f0;
+  border-radius: 2px;
+}
+
+.task-content {
+  min-width: 0;
+}
+
+.task-content h3 {
+  margin: 0;
+}
+
+.task-content p {
+  margin: 8px 0;
+  color: #64748b;
+}
+
+.task-status {
+  display: inline-block;
+  margin-top: 4px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: #e2e8f0;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.task-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.task-actions button {
+  padding: 8px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 2px;
+  background: #ffffff;
+  color: #0f172a;
+}
+
+.task-actions button:hover {
+  background: #f1f5f9;
+}
+
+@media (max-width: 640px) {
+  .app {
+    width: min(100% - 20px, 900px);
+    padding: 24px 0;
+  }
+
+  .task-form-section,
+  .tasks-section,
+  .audit-section {
+    padding: 16px;
+  }
+
+  .task-item {
+    flex-direction: column;
+  }
+
+  .task-actions {
+    justify-content: flex-start;
+  }
+}
+
+.audit-modal-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgb(15 23 42 / 0.5);
+  z-index: 1000;
+}
+
+.audit-modal {
+  width: min(600px, 100%);
+  max-height: 80vh;
+  overflow-y: auto;
+  padding: 24px;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+}
+
+.audit-modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.audit-modal-header h2 {
+  margin: 0;
+}
+
+.audit-modal-header p {
+  margin: 6px 0 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.audit-modal-header button {
+  padding: 8px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 2px;
+  background: #ffffff;
+  color: #0f172a;
+  cursor: pointer;
+}
+
+.audit-modal-header button:hover {
+  background: #f1f5f9;
+}

@@ -1,0 +1,44 @@
+/*
+ * -------------- Yoga Wilanda Documentation V.1.0.0 -----------------
+ *
+ * <meta_config>
+ * Author_______________: yogawilanda <eayogawilanda@gmail.com>
+ * Path_________________: frontend/src/index.css
+ * Purpose______________: Define global application styles.
+ * Version______________: 1.0.0
+ * Status_______________: active
+ * </meta_config>
+ *
+ * Function              : Global Styling
+ * Loc                   : index.css
+ *
+ * -------------------------------------------------------------------
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
